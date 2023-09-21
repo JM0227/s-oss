@@ -1,0 +1,24 @@
+/* 
+ *   Wrighting day: 2018. 11.15
+ *   Modifying day: 2018. 11.23
+ */
+ @charset "utf-8";
+
+/* login */
+.login_box .conts input[type='text']:focus, 
+.login_box .conts input[type='password']:focus { background:none; }
+.login_box .conts button { background:#e31937; }
+.find_box .ins_box ul li select { padding:7px 10px 7px 15px; background:#343434; }
+
+/* button */
+.btn-defalt { background:#eb012c; }
+.btn-defalt.gray { background:#6b6b6b; }
+.sd-footer .btn { line-height: 34px; }
+
+/* dashboard */
+#sideMenu .tabs a { background:#585858; }
+#sideMenu .tabs a.active { background:#eb012c; }
+.searchArea .btn-search { background:#eb012c; }
+.searchArea .btn-detail { background:#eb012c; }
+select.sd-control { background:#fff; }
+.btn-return { line-height:22px; } 

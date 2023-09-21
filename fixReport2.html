@@ -1,0 +1,1027 @@
+<!--
+ Wrighting day: 2018. 11.23
+ Modifying day: 2019. 01.02
+-->
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>SK U-OASIS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!--[if ie 9]>
+    <link href="./css/ie9.css" type="text/css" rel="stylesheet" />
+    <!<![endif]-->
+    <!-- JS -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/placeholders.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- sidebar -->
+        <div id="sideMenu">
+            <div class="dp1">
+                <h1 class="logo">
+                    <a href="#"><span class="blind">SK telecom U-OASIS</span></a>
+                </h1>
+                <div class="tabs">
+                    <a href="./brokenDashboard.html" class="broken" data-tab="brokenList">메뉴1</a>
+                    <a href="./fixDashboard.html" class="fix active" data-tab="fixList">메뉴2</a>
+                </div>
+            </div>
+            <div class="dp2" id="brokenList">
+                <ul>
+                    <li><a href="./brokenDashboard.html">메뉴1-1</a></li>
+                    <li><a href="./brokenReport1.html">메뉴1-2</a></li>
+                    <li><a href="./brokenReport2.html">메뉴1-3</a></li>
+                    <li><a href="./brokenReport3.html">메뉴1-4</a></li>
+                </ul>
+            </div>
+            <div class="dp2 active" id="fixList">
+                <ul>
+                    <li><a href="./fixDashboard.html">메뉴2-1</a></li>
+                    <li><a href="./fixReport1.html">메뉴2-1</a></li>
+                    <li class="active"><a href="./fixReport2.html">메뉴2-3</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //sidebar -->
+        <!-- container -->
+        <div id="container">
+            <!-- topMenu -->
+            <div class="topMenu">
+                <span class="tit">구분</span>
+                <div class="typeList">
+                    <span id="typeBox">선택</span>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="" id="opRepeater" value="opRepeater" class="typeChks">
+                            <label for="opRepeater">option1</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="repeaterRf" value="repeaterRf" class="typeChks">
+                            <label for="repeaterRf">option2</label>
+                        </li>
+                    </ul>
+                </div>
+                <button type="submit" class="btn_typeSearch"></button>
+                <div class="userInfo">
+                    <a href="#" class="user"><span href="#">onsmgr1</span>님 안녕하세요</a>
+                    <a href="./login.html" class="logout">로그아웃</a>
+                    <ul class="userDp2">
+                        <li><a href="#" class="js-open2" data-pop="profileEdit">회원정보 수정</a></li>
+                        <li><a href="./login.html">로그아웃</a></li>
+                        <li><a href="#" class="userClose">취소</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //topMenu -->
+            <!-- navigation -->
+            <div class="navigation">
+                <ul>
+                    <li class="home"><span>Home</span></li>
+                    <li><span>메뉴2</span></li>
+                    <li><span>메뉴2-3</span></li>
+                </ul>
+
+                <button type="button" class="btn-download"><span>DOWNLOAD</span></button>
+            </div>
+            <!-- //navigation -->
+            <!-- content -->
+            <div class="content">
+                <h2>메뉴2-3</h2>
+                <p class="reset">
+                    2018.11.02 15:20
+                    <span class="btn-reset"></span>
+                </p>
+                <div class="searchArea">
+                    <form action="">
+                        <div class="inr">
+                            <input type="text" name="" class="ins-search" placeholder="검색어를 입력하세요">
+                            <button type="submit" class="btn-search"><span></span></button>
+                            <button type="button" class="btn-detail">상세검색</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- 상세검색 -->
+                <div class="row searchDetail">
+                    <div class="sd-header">
+                        <span>상세검색</span>
+                        <a href="#" class="close closeEvent"></a>
+                    </div>
+                    <div class="sd-body">
+                        <ul class="category">
+                            <li class="w3">
+                                <span class="tit">분류</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div class="appendDiv">
+                                    <span class="tit">구분<span>1</span></span>
+                                    <select class="sd-control">
+                                        <option value="">전체</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <select class="sd-control">
+                                        <option value="">전체</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <button type="button" class="btn-append plus"></button>
+                                </div>
+                            </li>
+                            <li class="w3 bd-n">
+                                <span class="tit">구분</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </li>
+                            <li class="w3 bd-n">
+                                <span class="tit">구분 타입</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <span class="tit w173">구분 종류</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </li>
+                            <li class="w3">
+                                <span class="tit">구분 상태</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <span class="tit w173">EDF</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </li>
+                            <li class="date">
+                                <span class="tit">구분 기간</span>
+                                <input type="text" name="startDate" class="sd-control" id="startDate" value="" />
+                                <span> ~ </span>
+                                <input type="text" name="endDate" class="sd-control" id="endDate" value="" />
+                                <button type="button" class="btn_date week on">1주일</button>
+                                <button type="button" class="btn_date month">1개월</button>
+                                <button type="button" class="btn_date month3">3개월</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sd-footer">
+                        <a href="#" class="btn-sdReset">초기화</a>
+                        <button type="button" class="btn sdClose closeEvent">취소</button>
+                        <button type="submit" class="btn sdSearch">검색</button>
+                    </div>
+                </div>
+                <!-- //상세검색 -->
+
+                <!-- title1 -->
+                <div class="row four">
+                    <!-- title1-1 -->
+                    <div>
+                        <div class="tit">
+                            <span class="c_red2">title1-1</span> 항목
+                            <p class="pagingBtn">
+                                <a href="#" class="btn pre"></a>
+                                <a href="#" class="btn next"></a>
+                            </p>
+                        </div>
+                        <div class="tblType1">
+                            <table summary="title1-1">
+                                <caption>항목, 숫자, 비율, 순위</caption>
+                                <colgroup>
+                                    <col style="width:40%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>숫자</th>
+                                        <th>비율</th>
+                                        <th>순위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>항목입니다.</strong></td>
+                                        <td>60</td>
+                                        <td>40%</td>
+                                        <td><span class="new">NEW</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>항목입니다. 항목입니다.</strong></td>
+                                        <td>45</td>
+                                        <td>35%</td>
+                                        <td><span class="up">2</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- title1-2 -->
+                    <div>
+                        <div class="tit">
+                            <span class="c_red2">title1-2</span> 항목
+                            <p class="pagingBtn">
+                                <a href="#" class="btn pre"></a>
+                                <a href="#" class="btn next"></a>
+                            </p>
+                        </div>
+                        <div class="tblType1">
+                            <table summary="title1-2">
+                                <caption>항목, 숫자, 비율, 순위</caption>
+                                <colgroup>
+                                    <col style="width:40%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>건수</th>
+                                        <th>숫자</th>
+                                        <th>순위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="null">
+                                        <td colspan="4">조회결과가 없습니다.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- title1-3 -->
+                    <div>
+                        <div class="tit">
+                            <span class="c_red2">title1-3</span> 항목
+                            <p class="pagingBtn">
+                                <a href="#" class="btn pre"></a>
+                                <a href="#" class="btn next"></a>
+                            </p>
+                        </div>
+                        <div class="tblType1">
+                            <table summary="title1-3">
+                                <caption>항목, 숫자, 비율, 순위</caption>
+                                <colgroup>
+                                    <col style="width:40%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>숫자</th>
+                                        <th>비율</th>
+                                        <th>순위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>헌법에 위배</strong></td>
+                                        <td>60</td>
+                                        <td>40%</td>
+                                        <td><span class="new">NEW</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>국회는 상호원조</strong></td>
+                                        <td>45</td>
+                                        <td>35%</td>
+                                        <td><span class="up">2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>최고법원인 대법원</strong></td>
+                                        <td>40</td>
+                                        <td>30%</td>
+                                        <td><span class="down">3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>군사법원의 조직·권한</strong></td>
+                                        <td>30</td>
+                                        <td>20%</td>
+                                        <td><span class="down">1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>군사법원의 조직·권한</strong></td>
+                                        <td>20</td>
+                                        <td>10%</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- title1-4 -->
+                    <div>
+                        <div class="tit">
+                            <span class="c_red2">title1-4</span> 항목
+                            <p class="pagingBtn">
+                                <a href="#" class="btn pre"></a>
+                                <a href="#" class="btn next"></a>
+                            </p>
+                        </div>
+                        <div class="tblType1">
+                            <table summary="title1-4">
+                                <caption>항목, 숫자, 비율, 순위</caption>
+                                <colgroup>
+                                    <col style="width:40%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>숫자</th>
+                                        <th>비율</th>
+                                        <th>순위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>군사법원의</strong></td>
+                                        <td>60</td>
+                                        <td>40%</td>
+                                        <td><span class="new">NEW</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>각급법원으로</strong></td>
+                                        <td>45</td>
+                                        <td>35%</td>
+                                        <td><span class="up">2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>재판의 전심절차로서</strong></td>
+                                        <td>40</td>
+                                        <td>30%</td>
+                                        <td><span class="down">3</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- //title1 -->
+
+                <!-- title2 -->
+                <div class="contType">
+                    <!-- title2-1 -->
+                    <div class="row">
+                        <div class="tit">
+                            <span class="c_red2">title2-1</span> 분석
+                            <p class="pagingBtn">
+                                <a href="#" class="btn pre"></a>
+                                <a href="#" class="btn next"></a>
+                            </p>
+                        </div>
+                        <div class="tblType1">
+                            <table summary="title2-1">
+                                <caption>항목, 숫자, 비율, 순위</caption>
+                                <colgroup>
+                                    <col style="width:57%;">
+                                    <col style="width:14%;">
+                                    <col style="width:14%;">
+                                    <col style="width:15%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>숫자</th>
+                                        <th>비율</th>
+                                        <th>순위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>헌법에 위배</strong></td>
+                                        <td>60</td>
+                                        <td>40%</td>
+                                        <td><span class="new">NEW</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>최고법원인 대법원</strong></td>
+                                        <td>45</td>
+                                        <td>35%</td>
+                                        <td><span class="up">2</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- title2-2 -->
+                    <div class="row">
+                        <div class="tit">
+                            <span class="c_red2">title2-2</span> 분석
+                            <p class="pagingBtn">
+                                <a href="#" class="btn pre"></a>
+                                <a href="#" class="btn next"></a>
+                            </p>
+                        </div>
+                        <div class="tblType1">
+                            <table summary="title2-2">
+                                <caption>항목, 숫자, 비율, 순위</caption>
+                                <colgroup>
+                                    <col style="width:57%;">
+                                    <col style="width:14%;">
+                                    <col style="width:14%;">
+                                    <col style="width:15%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>숫자</th>
+                                        <th>비율</th>
+                                        <th>순위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="null">
+                                        <td colspan="4">조회결과가 없습니다.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- title2-3 -->
+                    <div class="row">
+                        <div class="tit">
+                            <span class="c_red2">title2-3</span> 분석
+                            <p class="pagingBtn">
+                                <a href="#" class="btn pre"></a>
+                                <a href="#" class="btn next"></a>
+                            </p>
+                        </div>
+                        <div class="tblType1">
+                            <table summary="title2-3">
+                                <caption>항목, 숫자, 비율, 순위</caption>
+                                <colgroup>
+                                    <col style="width:57%;">
+                                    <col style="width:14%;">
+                                    <col style="width:14%;">
+                                    <col style="width:15%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>숫자</th>
+                                        <th>비율</th>
+                                        <th>순위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>최고법원인 대법원</strong></td>
+                                        <td>60</td>
+                                        <td>40%</td>
+                                        <td><span class="new">NEW</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>군사법원의 조직·권한</strong></td>
+                                        <td>45</td>
+                                        <td>35%</td>
+                                        <td><span class="up">2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>재판의 전심절차</strong></td>
+                                        <td>40</td>
+                                        <td>30%</td>
+                                        <td><span class="down">3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>규칙을 제정</strong></td>
+                                        <td>30</td>
+                                        <td>20%</td>
+                                        <td><span class="down">1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>국회는 상호원조</strong></td>
+                                        <td>20</td>
+                                        <td>10%</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- title2-4 -->
+                    <div class="row">
+                        <div class="tit">
+                            <span class="c_red2">title2-4</span> 분석
+                            <p class="pagingBtn">
+                                <a href="#" class="btn pre"></a>
+                                <a href="#" class="btn next"></a>
+                            </p>
+                        </div>
+                        <div class="tblType1">
+                            <table summary="title2-4">
+                                <caption>항목, 숫자, 비율, 순위</caption>
+                                <colgroup>
+                                    <col style="width:57%;">
+                                    <col style="width:14%;">
+                                    <col style="width:14%;">
+                                    <col style="width:15%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>숫자</th>
+                                        <th>비율</th>
+                                        <th>순위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>재판의 전심절차</strong></td>
+                                        <td>60</td>
+                                        <td>40%</td>
+                                        <td><span class="new">NEW</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>최고법원인 대법원</strong></td>
+                                        <td>45</td>
+                                        <td>35%</td>
+                                        <td><span class="up">2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>군사법원의 조직·권한</strong></td>
+                                        <td>40</td>
+                                        <td>30%</td>
+                                        <td><span class="down">3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>국회는 상호원조</strong></td>
+                                        <td>30</td>
+                                        <td>20%</td>
+                                        <td><span class="down">1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>규칙을 제정</strong></td>
+                                        <td>20</td>
+                                        <td>10%</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- //title2 -->
+
+                <!-- title3 -->
+                <div class="row">
+                    <div class="tit">
+                        <span class="c_red2">title3</span> 분석
+                        <span class="reset">2018.11.02 15:20<span class="btn-reset"></span>
+                        </span>
+                    </div>
+
+                    <div class="tblType1 h280">
+                        <table summary="title3">
+                            <caption>숫자, 항목, 항목, 숫자, 비율</caption>
+                            <colgroup>
+                                <col style="width:10%;" />
+                                <col style="width:20%;" />
+                                <col style="width:25%;" />
+                                <col style="width:10%;" />
+                                <col style="width:35%;" />
+                            </colgroup>
+
+                            <thead>
+                                <tr>
+                                    <th>숫자</th>
+                                    <th>항목</th>
+                                    <th>항목</th>
+                                    <th>숫자</th>
+                                    <th>비율</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><strong class="c_blue over js-open2" data-pop="comparePopup">군사법원의 조직·권한</strong></td>
+                                    <td>사무처리</td>
+                                    <td>80</td>
+                                    <td>
+                                        <div class="progress p75"></div>
+                                        <span class="per2">75%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><strong class="c_blue over">재판의 전심절차</strong></td>
+                                    <td>어촌종합</td>
+                                    <td>15</td>
+                                    <td>
+                                        <div class="progress p50"></div>
+                                        <span class="per2">50%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><strong class="c_blue over">재판관의 자격</strong></td>
+                                    <td>상호원조</td>
+                                    <td>5</td>
+                                    <td>
+                                        <div class="progress p90"></div>
+                                        <span class="per2">90%</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //title3 -->
+
+                <!-- title4 -->
+                <div class="row">
+                    <div class="tit">
+                        <span class="c_red2">title4</span> 분석
+                        <span class="reset">2018.11.02 15:20<span class="btn-reset"></span>
+                        </span>
+                    </div>
+
+                    <div class="tblType1 h280">
+                        <table summary="title4">
+                            <caption>숫자, 항목, 항목, 숫자, 비율</caption>
+                            <colgroup>
+                                <col style="width:10%;" />
+                                <col style="width:20%;" />
+                                <col style="width:25%;" />
+                                <col style="width:10%;" />
+                                <col style="width:35%;" />
+                            </colgroup>
+
+                            <thead>
+                                <tr>
+                                    <th>숫자</th>
+                                    <th>항목</th>
+                                    <th>항목</th>
+                                    <th>숫자</th>
+                                    <th>비율</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="null">
+                                    <td colspan="5">조회결과가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //title4 -->
+
+                <!-- title5 -->
+                <div class="row">
+                    <div class="tit">
+                        <span class="c_red2">title5</span> 상관관계 분석
+                        <span class="reset">2018.11.02 15:20<span class="btn-reset"></span>
+                        </span>
+                    </div>
+
+                    <div class="tblType1 h280">
+                        <table summary="수리-벤더 상관관계 분석">
+                            <caption>숫자, 항목, 항목, 숫자, 비율</caption>
+                            <colgroup>
+                                <col style="width:10%;" />
+                                <col style="width:20%;" />
+                                <col style="width:25%;" />
+                                <col style="width:10%;" />
+                                <col style="width:35%;" />
+                            </colgroup>
+
+                            <thead>
+                                <tr>
+                                    <th>숫자</th>
+                                    <th>항목</th>
+                                    <th>항목</th>
+                                    <th>숫자</th>
+                                    <th>비율</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><strong class="c_blue over js-open2" data-pop="comparePopup">군사법원의 조직·권한</strong></td>
+                                    <td>EDSFG</td>
+                                    <td>80</td>
+                                    <td>
+                                        <div class="progress p75"></div>
+                                        <span class="per2">75%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><strong class="c_blue over">재판관의 자격</strong></td>
+                                    <td>교체</td>
+                                    <td>15</td>
+                                    <td>
+                                        <div class="progress p50"></div>
+                                        <span class="per2">50%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><strong class="c_blue over">최고법원인 대법원</strong></td>
+                                    <td>재판의 전심</td>
+                                    <td>5</td>
+                                    <td>
+                                        <div class="progress p90"></div>
+                                        <span class="per2">90%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><strong class="c_blue over">군사법원의 조직·권한</strong></td>
+                                    <td>국회의 동의</td>
+                                    <td>80</td>
+                                    <td>
+                                        <div class="progress p80"></div>
+                                        <span class="per2">80%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><strong class="c_blue over">대법원은 법률에 저촉</strong></td>
+                                    <td>국가기관</td>
+                                    <td>75</td>
+                                    <td>
+                                        <div class="progress p30"></div>
+                                        <span class="per2">30%</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //title5 -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+    <!-- footer -->
+    <div id="footer">
+        <p>
+            <span class="footLogo"></span>
+            <span class="copy">
+                COPYRIGHT 2018 <span class="c_deepRed">SK U-OASIS</span>(Unstructured Operation data AnalySIS system). ALL RIGHT RESERVED.
+            </span>
+        </p>
+    </div>
+    <!-- //footer -->
+    <!-- 회원정보 수정 -->
+    <div class="js-layer2 layer2 hidden" id="profileEdit">
+        <div class="layer2-header">
+            <h3>회원정보 수정</h3>
+            <span class="profile-close layer2-close"></span>
+        </div>
+        <div class="layer2-body">
+            <ul class="category">
+                <li class="userId">
+                    <span class="tit">User ID</span>
+                    onsmgr1
+                </li>
+                <li class="bd-n">
+                    <span class="tit">현재 비밀번호 <span class="c_red">*</span></span>
+                    <input type="text" name="" id="" class="sd-control" placeholder="현재 비밀번호를 입력해 주세요." />
+                </li>
+                <li class="bd-n">
+                    <span class="tit">새 비밀번호 <span class="c_red">*</span></span>
+                    <input type="text" name="" id="" class="sd-control" placeholder="변경되는 비밀번호를 입력해 주세요." />
+                </li>
+                <li>
+                    <span class="tit">새 비밀번호 확인 <span class="c_red">*</span></span>
+                    <input type="text" name="" id="" class="sd-control" placeholder="변경되는 비밀번호를 한번 더 입력해 주세요." />
+                </li>
+                <li class="bd-n">
+                    <span class="tit">이름</span>
+                    <input type="text" name="" id="" class="sd-control" placeholder="이름을 입력해 주세요." />
+                </li>
+                <li class="bd-n w3">
+                    <span class="tit">연락처</span>
+                    <select name="" id="" class="sd-control">
+                        <option value="" selected>010</option>
+                        <option value="">011</option>
+                        <option value="">018</option>
+                    </select>
+                    <span class="bar"> - </span>
+                    <input type="text" name="" id="" class="sd-control" />
+                    <span class="bar"> - </span>
+                    <input type="text" name="" id="" class="sd-control" />
+                </li>
+                <li>
+                    <span class="tit">E-Mail</span>
+                    <input type="text" name="" id="" class="sd-control" placeholder="이메일을 입력해 주세요." />
+                </li>
+            </ul>
+            <div class="btnWrap">
+                <span><span class="c_red">*</span> 는 필수 입력사항 입니다.</span>
+                <button type="button" class="btn-defalt wide white layer2-close">취소</button>
+                <button type="submit" class="js-open btn-defalt wide" data-pop="savePop">확인</button>
+            </div>
+        </div>
+    </div>
+    <!-- //회원정보 수정 -->
+
+    <!-- 통신불량 Link Fail -->
+    <div class="js-layer2 layer2 hidden" id="comparePopup">
+        <div class="layer2-header">
+            <h3>통신불량_Link Fail (에이스톤)</h3>
+            <span class="profile-close layer2-close"></span>
+        </div>
+        <div class="layer2-body">
+            <div class="row two">
+                <!-- 장비명 분석 -->
+                <div>
+                    <div class="tit">
+                        <span class="c_red2">장비명</span> 분석
+                        <p class="pagingBtn">
+                            <a href="#" class="btn pre"></a>
+                            <a href="#" class="btn next"></a>
+                        </p>
+                    </div>
+
+                    <div class="tblType1">
+                        <table summary="장비명 분석">
+                            <caption>항목, 건수, 비율, 순위</caption>
+                            <colgroup>
+                                <col style="width:46%;">
+                                <col style="width:18%;">
+                                <col style="width:18%;">
+                                <col style="width:18%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>항목</th>
+                                    <th>건수</th>
+                                    <th>비율</th>
+                                    <th>순위</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>DU30(내)</strong></td>
+                                    <td>65</td>
+                                    <td>60%</td>
+                                    <td><span class="new"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ENB(내)</strong></td>
+                                    <td>45</td>
+                                    <td>20%</td>
+                                    <td><span class="up">2</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>IPNB-DU-3S(내)</strong></td>
+                                    <td>71</td>
+                                    <td>50%</td>
+                                    <td><span class="up">3</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>E3-NODEB(외)</strong></td>
+                                    <td>4</td>
+                                    <td>45%</td>
+                                    <td><span class="down">1</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>일반(내)</strong></td>
+                                    <td>20</td>
+                                    <td>10%</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //장비명 분석 -->
+
+                <!-- 유니트 분석 -->
+                <div>
+                    <div class="tit">
+                        <span class="c_red2">유니트</span> 분석
+                        <p class="pagingBtn">
+                            <a href="#" class="btn pre"></a>
+                            <a href="#" class="btn next"></a>
+                        </p>
+                    </div>
+
+                    <div class="tblType1">
+                        <table summary="유니트 분석">
+                            <caption>항목, 건수, 비율, 순위</caption>
+                            <colgroup>
+                                <col style="width:48%;">
+                                <col style="width:17%;">
+                                <col style="width:17%;">
+                                <col style="width:17%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>항목</th>
+                                    <th>건수</th>
+                                    <th>비율</th>
+                                    <th>순위</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>SF-TMF063</strong></td>
+                                    <td>65</td>
+                                    <td>60%</td>
+                                    <td><span class="new"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>RO-W-D60-CMHU</strong></td>
+                                    <td>45</td>
+                                    <td>20%</td>
+                                    <td><span class="up">2</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ARRU_L(SS)</strong></td>
+                                    <td>71</td>
+                                    <td>50%</td>
+                                    <td><span class="up">3</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>RRU_L(SS)</strong></td>
+                                    <td>4</td>
+                                    <td>45%</td>
+                                    <td><span class="down">1</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>RRU_2.6G-ARRU(SS)</strong></td>
+                                    <td>20</td>
+                                    <td>10%</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //유니트 분석 -->
+            </div>
+        </div>
+    </div>
+    <!-- //통신불량 Link Fail -->
+    <div class="dimm"></div>
+
+    <!-- alert -->
+    <div class="js-layer layer alert hidden" id="savePop">
+        <div class="layer-header">
+            <a href="#" class="js-close btn-close"></a>
+        </div>
+        <p class="tit save">성공적으로 저장되었습니다.</p>
+        <button type="button" class="js-close layer2-close btn-defalt">확인</button>
+        <!-- alert 창 뒤의 팝업이 닫히지 않게 사용하려면 layer2-close를 빼고 사용 -->
+    </div>
+    <!-- alert -->
+</body>
+
+</html>

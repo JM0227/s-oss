@@ -1,0 +1,623 @@
+<!--
+ Wrighting day: 2018. 11.22
+ Modifying day: 2019. 01.02
+-->
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>SK U-OASIS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!--[if ie 9]>
+    <link href="./css/ie9.css" type="text/css" rel="stylesheet" />
+    <!<![endif]-->
+    <!-- JS -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/placeholders.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- sidebar -->
+        <div id="sideMenu">
+            <div class="dp1">
+                <h1 class="logo">
+                    <a href="#"><span class="blind">SK telecom U-OASIS</span></a>
+                </h1>
+                <div class="tabs">
+                    <a href="./brokenDashboard.html" class="broken active" data-tab="brokenList">메뉴1</a>
+                    <a href="./fixDashboard.html" class="fix" data-tab="fixList">메뉴2</a>
+                </div>
+            </div>
+            <div class="dp2 active" id="brokenList">
+                <ul>
+                    <li><a href="./brokenDashboard.html">메뉴1-1</a></li>
+                    <li><a href="./brokenReport1.html">메뉴1-2</a></li>
+                    <li class="active"><a href="./brokenReport2.html">메뉴1-3</a></li>
+                    <li><a href="./brokenReport3.html">메뉴1-4</a></li>
+                </ul>
+            </div>
+            <div class="dp2" id="fixList">
+                <ul>
+                    <li><a href="./fixDashboard.html">메뉴2-1</a></li>
+                    <li><a href="./fixReport1.html">메뉴2-2</a></li>
+                    <li><a href="./fixReport2.html">메뉴2-3</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //sidebar -->
+        <!-- container -->
+        <div id="container">
+            <!-- topMenu -->
+            <div class="topMenu">
+                <span class="tit">구분</span>
+                <div class="typeList">
+                    <span id="typeBox">선택</span>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="" id="station" value="station" class="typeChks">
+                            <label for="station">option1</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="repeater" value="repeater" class="typeChks">
+                            <label for="repeater">option2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="repeaterRf" value="repeaterRf" class="typeChks">
+                            <label for="repeaterRf">option3</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="other" value="other" class="typeChks">
+                            <label for="other">option4</label>
+                        </li>
+                    </ul>
+                </div>
+                <button type="submit" class="btn_typeSearch"></button>
+                <div class="userInfo">
+                    <a href="#" class="user"><span href="#">onsmgr1</span>님 안녕하세요</a>
+                    <a href="./login.html" class="logout">로그아웃</a>
+                    <ul class="userDp2">
+                        <li><a href="#" class="js-open2" data-pop="profileEdit">회원정보 수정</a></li>
+                        <li><a href="./login.html">로그아웃</a></li>
+                        <li><a href="#" class="userClose">취소</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //topMenu -->
+            <!-- navigation -->
+            <div class="navigation">
+                <ul>
+                    <li class="home"><span>Home</span></li>
+                    <li><span>메뉴1</span></li>
+                    <li><span>메뉴1-3</span></li>
+                </ul>
+
+                <button type="button" class="btn-download"><span>DOWNLOAD</span></button>
+            </div>
+            <!-- //navigation -->
+            <!-- content -->
+            <div class="content">
+                <h2>메뉴1-3</h2>
+                <p class="reset">
+                    2018.11.02 15:20
+                    <span class="btn-reset"></span>
+                </p>
+                <div class="searchArea">
+                    <form action="">
+                        <div class="inr">
+                            <input type="text" name="" class="ins-search" placeholder="검색어를 입력하세요">
+                            <button type="submit" class="btn-search"><span></span></button>
+                            <button type="button" class="btn-detail">상세검색</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- 상세검색 -->
+                <div class="row searchDetail">
+                    <div class="sd-header">
+                        <span>상세검색</span>
+                        <a href="#" class="close closeEvent"></a>
+                    </div>
+                    <div class="sd-body">
+                        <ul class="category">
+                            <li class="w3">
+                                <span class="tit">구분</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div class="appendDiv">
+                                    <span class="tit">구분<span>1</span></span>
+                                    <select class="sd-control">
+                                        <option value="">전체</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <select class="sd-control">
+                                        <option value="">전체</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <button type="button" class="btn-append plus"></button>
+                                </div>
+                            </li>
+                            <li class="bd-n w3">
+                                <span class="tit">구분</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <span class="tit ml20">구분</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <span class="tit ml20">구분</span>
+                                <select class="sd-control">
+                                    <option value="">전체</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </li>
+                            <li class="bd-n">
+                                <span class="tit localOepn">구분</span>
+                                <input type="text" class="sd-control c-local" placeholder="구분명을 입력해 주세요.">
+                                <div class="locationName" id="lo1">
+                                    <span class="loClose ico"></span>
+                                    <p class="title">구분 검색</p>
+                                    <input type="text" name="" class="loSearch" placeholder="구분명을 입력해 주세요.">
+                                    <button type="submit"></button>
+                                    <p class="s_be">
+                                        <strong>구분 검색방법</strong><br>
+                                        검색명을 입력하시면 정확한 결과가 검색됩니다.
+                                    </p>
+                                    <div class="btnWrap">
+                                        <button type="submit" class="btn-defalt small">확인</button>
+                                        <button type="button" class="btn-defalt small white loClose">취소</button>
+                                    </div>
+                                </div>
+                                <!-- //검색1 -->
+                            </li>
+                            <li>
+                                <span class="tit localOepn">구분</span>
+                                <input type="text" class="sd-control c-local" id="test1" placeholder="구분을 입력 해 주세요.">
+                                <div class="locationName">
+                                    <span class="loClose ico"></span>
+                                    <p class="title">구분 검색</p>
+                                    <input type="text" name="" class="loSearch" placeholder="구분을 입력해 주세요.">
+                                    <button type="submit"></button>
+                                    <div class="s_af">
+                                        <ul>
+                                            <li>option1 (123456789)</li>
+                                            <li>option2 (123456789)</li>
+                                            <li>option3 (123456789)</li>
+                                            <li>option4 (123456789)</li>
+                                            <li>option5 (123456789)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="btnWrap">
+                                        <button type="submit" class="btn-defalt small loClose">확인</button>
+                                        <button type="button" class="btn-defalt small white loDel">취소</button>
+                                    </div>
+                                </div>
+                                <!-- //검색2 -->
+                            </li>
+                            <li class="date">
+                                <span class="tit">기간</span>
+                                <input type="text" name="startDate" class="sd-control" id="startDate" value="" />
+                                <span> ~ </span>
+                                <input type="text" name="endDate" class="sd-control" id="endDate" value="" />
+                                <button type="button" class="btn_date week on">1주일</button>
+                                <button type="button" class="btn_date month">1개월</button>
+                                <button type="button" class="btn_date month3">3개월</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sd-footer">
+                        <a href="#" class="btn-sdReset">초기화</a>
+                        <button type="button" class="btn sdClose closeEvent">취소</button>
+                        <button type="submit" class="btn sdSearch">검색</button>
+                    </div>
+                </div>
+                <!-- //상세검색 -->
+                <!-- detailWrap -->
+                <div class="detailWrap">
+                    <div class="period">
+                        <span class="tit">집계기간</span>
+                        <div class="fr">
+                            <button type="button" class="btn day on" id="btnDay">일간</button>
+                            <button type="button" class="btn week" id="btnWeek">주간</button>
+                            <button type="button" class="btn month" id="btnMonth">월간</button>
+                            <button type="button" class="btn peri">기간검색</button>
+                        </div>
+                        <span class="txt_date">
+                            <span id="sDate"></span> 
+                            <span>~</span> 
+                            <span id="eDate"></span>
+                        </span>
+                    </div>
+                    <!--  타이틀1 -->
+                    <div class="contTab">
+                        <p class="tab_tit">
+                            타이틀1
+                            <button type="button" class="btn-return">전체보기</button>
+                            <span class="txt-team">[ 000 본부 ]</span>
+                            <span class="reset">
+                                2018.11.02 15:20
+                                <span class="btn-reset"></span>
+                            </span>
+                        </p>
+                        <ul>
+                            <li class="active">
+                                <p class="tab_tit2">항목</p>
+                                <p class="txt">
+                                    <span class="num">300</span>
+                                    <span class="bar">/</span>
+                                     <span>30%</span>
+                                 </p>
+                            </li>
+                            <li>
+                                <p class="tab_tit2">항목</p>
+                                <p class="txt">
+                                    <span class="num">250</span>
+                                    <span class="bar">/</span>
+                                    <span>22%</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="tab_tit2">항목</p>
+                                <p class="txt">
+                                    <span class="num">190</span>
+                                    <span class="bar">/</span>
+                                    <span>20%</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="tab_tit2">항목</p>
+                                <p class="txt">
+                                    <span class="num">110</span>
+                                    <span class="bar">/</span>
+                                    <span>15%</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="tab_tit2">항목</p>
+                                <p class="txt">
+                                    <span class="num">75</span>
+                                    <span class="bar">/</span>
+                                    <span>7%</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- //타이틀1 -->
+                    <!-- 타이틀2 -->
+                    <div class="row">
+                        <div class="tit">
+                            타이틀2
+                            <span class="tabVal">'항목'</span>
+                            <button type="button" class="btn-return">전체보기</button>
+                            <span class="txt-team">[ 000 본부 > 00팀 ]</span>
+                            
+                            <span class="reset">
+                                2018.11.02 15:20
+                                <span class="btn-reset"></span>
+                            </span>
+                         </div>
+                         <div class="issue">
+                             <div class="frequency">
+                                 <div>
+                                     <p class="tit">대통령의 임기</p>
+                                     <div class="cont">
+                                         <span class="txt1">
+                                            균등한 기회<br>(2018.11.01 ~ 2018.11.02)
+                                         </span>
+                                         <p class="txt2">
+                                            선거운동
+                                            <span class="num">241</span>
+                                         </p>
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <p class="tit">선거운동</p>
+                                     <div class="cont">
+                                         <span class="txt1">
+                                            법률이 정하는 바
+                                         </span>
+                                         <p class="txt2">
+                                            법률
+                                            <span class="num">591</span>
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                            <!-- 타이틀2-1 -->
+                            <div class="row">
+                                <p class="tit">
+                                    타이틀2-1
+                                    <span class="reset">
+                                        2018.11.02 15:20
+                                        <span class="btn-reset"></span>
+                                    </span>
+                                </p>
+                                <div class="graphArea">
+                                    <div class="chart">
+                                        <img src="./images/chart1.jpg" alt="타이틀2-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 타이틀2-1 -->
+                         </div>
+                    </div>
+                    <!-- //타이틀2 -->
+
+                    <!-- 타이틀3, 타이틀4 -->
+                    <div class="contType">
+                        <div class="row">
+                            <div class="tit">
+                                타이틀3
+                                <span class="tabVal">'항목'</span>
+                                <button type="button" class="btn-return">전체보기</button>
+                                <span class="reset">
+                                    2018.11.02 15:20
+                                    <span class="btn-reset"></span>
+                                </span>
+                             </div>
+                             <div class="issue key">
+                                 <div class="keyChart">
+                                    <img src="./images/chart4.jpg" alt="주요 키워드">
+                                 </div>
+                                 <p>주제어</p>
+                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="tit">
+                                타이틀4
+                                <span class="tabVal">'항목'</span>
+                                <button type="button" class="btn-return">전체보기</button>
+                                <span class="reset">
+                                    2018.11.02 15:20
+                                    <span class="btn-reset"></span>
+                                </span>
+                             </div>
+                             <div class="isKey">
+                                 <div class="tblType1 scrollHead">
+                                     <table summary="타이틀4">
+                                         <caption>타이틀4</caption>
+                                         <thead>
+                                             <tr>
+                                                 <th class="w40">항목</th>
+                                                 <th class="w20">숫자</th>
+                                                 <th class="w20">숫자</th>
+                                                 <th class="w20">비율(%)</th>
+                                                 <th class="w20">비율(%)</th>
+                                             </tr>
+                                         </thead>
+                                     </table>
+                                 </div>
+                                 <div class="tblType1 scrollBody">
+                                    <table summary="급상승 키워드">
+                                         <caption>타이틀4</caption>
+                                         <tbody>
+                                             <tr>
+                                                 <td class="w40">항목입니다.</td>
+                                                 <td class="w20">28</td>
+                                                 <td class="w20">28</td>
+                                                 <td class="w20"><strong>120%</strong></td>
+                                                 <td class="w20">120%</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>항목입니다. 항목입니다.</td>
+                                                 <td>23</td>
+                                                 <td>23</td>
+                                                 <td><strong>120%</strong></td>
+                                                 <td>120%</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>항목입니다.</td>
+                                                 <td>25</td>
+                                                 <td>25</td>
+                                                 <td><strong>50%</strong></td>
+                                                 <td>50%</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>항목입니다.</td>
+                                                 <td>15</td>
+                                                 <td>15</td>
+                                                 <td><strong>120%</strong></td>
+                                                 <td>120%</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>항목입니다.</td>
+                                                 <td>36</td>
+                                                 <td>36</td>
+                                                 <td><strong>120%</strong></td>
+                                                 <td>120%</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>항목입니다.</td>
+                                                 <td>77</td>
+                                                 <td>77</td>
+                                                 <td><strong>120%</strong></td>
+                                                 <td>120%</td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+                                 </div>
+                             </div>
+                             
+                        </div>
+                    </div>
+                    <!-- //타이틀3, 타이틀4 -->
+
+                    <!-- 타이틀5 -->
+                    <div class="row">
+                        <div class="tit">
+                            타이틀5
+                            <span class="reset">
+                                2018.11.02 15:20
+                                <span class="btn-reset"></span>
+                            </span>
+                            <span class="standard">항목 : 항목 설명입니다.</span>
+                         </div>
+                         <div class="issue location">
+                             <p class="refer">※ 항목입니다.</p>
+                             <ul class="top5">
+                                 <li><a href="#" class="active">탭1</a></li>
+                                 <li><a href="#">탭2</a></li>
+                                 <li><a href="#">탭3</a></li>
+                                 <li><a href="#">탭4</a></li>
+                                 <li><a href="#">탭5</a></li>
+                             </ul>
+                             <div class="map">
+                                <div class="selWrap">
+                                    <div class="sel-custom">
+                                        <select name="custom1" id="custom1">
+                                            <option value="">분류 전체</option>
+                                            <option value="">분류1</option>
+                                            <option value="">분류2</option>
+                                            <option value="">분류3</option>
+                                            <option value="">분류4</option>
+                                            <option value="">분류5</option>
+                                            <option value="">분류6</option>
+                                            <option value="">분류7</option>
+                                            <option value="">분류8</option>
+                                        </select>
+                                     </div>
+                                     <div class="sel-custom">
+                                        <select name="custom2" id="custom2">
+                                            <option value="">항목 전체</option>
+                                            <option value="">항목1</option>
+                                            <option value="">항목2</option>
+                                            <option value="">항목3</option>
+                                            <option value="">항목4</option>
+                                            <option value="">항목5</option>
+                                            <option value="">항목6</option>
+                                            <option value="">항목7</option>
+                                            <option value="">항목8</option>
+                                        </select>
+                                     </div>
+                                </div>
+                                 <div class="mapWrap">
+                                     <img src="./images/chart11.jpg" alt="타이틀5" />
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
+                    <!-- //타이틀5 -->
+                 </div>
+                <!-- //detailWrap -->
+            </div>
+            <!-- //content -->
+         </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+    <!-- footer -->
+    <div id="footer">
+        <p>
+            <span class="footLogo"></span>
+            <span class="copy">
+                COPYRIGHT 2018 <span class="c_deepRed">SK U-OASIS</span>(Unstructured Operation data AnalySIS system). ALL RIGHT RESERVED.
+            </span>
+         </p>
+    </div>
+    <!-- //footer -->
+    <!-- 회원정보 수정 -->
+    <div class="js-layer2 layer2 hidden" id="profileEdit">
+                    <div class="layer2-header">
+                        <h3>회원정보 수정</h3>
+                        <span class="profile-close layer2-close"></span>
+                    </div>
+                    <div class="layer2-body">
+                        <ul class="category">
+                            <li class="userId">
+                                <span class="tit">User ID</span>
+                                onsmgr1
+                            </li>
+                            <li class="bd-n">
+                                <span class="tit">현재 비밀번호 <span class="c_red">*</span></span>
+                                <input type="text" name="" id="" class="sd-control" placeholder="현재 비밀번호를 입력해 주세요." />
+                            </li>
+                            <li class="bd-n">
+                                <span class="tit">새 비밀번호 <span class="c_red">*</span></span>
+                                <input type="text" name="" id="" class="sd-control" placeholder="변경되는 비밀번호를 입력해 주세요." />
+                            </li>
+                            <li>
+                                <span class="tit">새 비밀번호 확인 <span class="c_red">*</span></span>
+                                <input type="text" name="" id="" class="sd-control" placeholder="변경되는 비밀번호를 한번 더 입력해 주세요." />
+                            </li>
+                            <li class="bd-n">
+                                <span class="tit">이름</span>
+                                <input type="text" name="" id="" class="sd-control" placeholder="이름을 입력해 주세요." />
+                            </li>
+                            <li class="bd-n w3">
+                                <span class="tit">연락처</span>
+                                <select name="" id="" class="sd-control">
+                                    <option value="" selected>010</option>
+                                    <option value="">011</option>
+                                    <option value="">018</option>
+                                </select>
+                                <span class="bar"> - </span>
+                                <input type="text" name="" id="" class="sd-control" />
+                                <span class="bar"> - </span>
+                                <input type="text" name="" id="" class="sd-control" />
+                            </li>
+                            <li>
+                                <span class="tit">E-Mail</span>
+                                <input type="text" name="" id="" class="sd-control" placeholder="이메일을 입력해 주세요." />
+                            </li>
+                        </ul>
+                        <div class="btnWrap">
+                            <span><span class="c_red">*</span> 는 필수 입력사항 입니다.</span>
+                            <button type="button" class="btn-defalt wide white layer2-close">취소</button>
+                            <button type="submit" class="btn-defalt wide">확인</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //회원정보 수정 -->
+                <div class="dimm"></div>
+                <!-- alert -->
+                <div class="js-layer layer alert hidden" id="savePop">
+                    <div class="layer-header">
+                        <a href="#" class="js-close btn-close"></a>
+                    </div>
+                    <p class="tit save">성공적으로 저장되었습니다.</p>
+                    <button type="button" class="js-close layer2-close btn-defalt">확인</button>
+                    <!-- alert 창 뒤의 팝업이 닫히지 않게 사용하려면 layer2-close를 빼고 사용 -->
+                </div>
+                <!-- alert -->                 
+</body>
+
+</html>
